@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yusra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #666;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            position: relative;
+            animation-duration: 1s;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section p {
+            margin-bottom: 20px;
+            color: #666;
+            text-align: justify;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .fade-in {
+            animation-name: fadeIn;
+        }
+
+        .fade-up {
+            animation-name: fadeUp;
+        }
+
+        .zoom-in {
+            animation-name: zoomIn;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">yusra</h1>
+        <nav class="animate__animated animate__fadeIn">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#team">团队信息</a></li>
+                <li><a href="#join">加入Yusra陪聊团</a></li>
+                <li><a href="#services">服务项目</a></li>
+                <li><a href="#prices">价格表</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="animate__animated animate__fadeIn">
+            <h2 class="animate__animated animate__fadeInUp">欢迎来到yusra</h2>
+            <p class="animate__animated animate__fadeInUp">我们提供高质量的陪聊和陪玩服务，满足您的需求并带给您愉快的体验。</p>
+            <img src="http://cdn.u1.huluxia.com/g4/M01/C9/38/rBAAdmTVvKOARF_AAADi-5y4qds610.jpg" alt="欢迎图片" class="animate__animated animate__zoomIn">
+        </section>
+
+        <section id="team" class="animate__animated animate__fadeIn">
+            <h2 class="animate__animated animate__fadeInUp">团队信息</h2>
+            <p class="animate__animated animate__fadeInUp">我们的团队由经验丰富的陪聊陪玩专家组成，致力于为客户提供最好的服务。</p>
+            <img src="http://cdn.u1.huluxia.com/g4/M01/C9/37/rBAAdmTVvF2AMMxgAACxdaAasr8288.png" alt="团队图片" class="animate__animated animate__zoomIn">
+        </section>
+
+        <section id="join" class="animate__animated animate__fadeIn">
+            <h2 class="animate__animated animate__fadeInUp">加入Yusra</h2>
+            <p class="animate__animated animate__fadeInUp">如果您对成为我们团队的一员感兴趣，请填写下面的表格并提交申请。</p>
+            <form class="animate__animated animate__fadeInUp">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email">
+
+                <input type="submit" value="提交">
+            </form>
+        </section>
+
+        <section id="services" class="animate__animated animate__fadeIn">
+            <h2 class="animate__animated animate__fadeInUp">服务项目</h2>
+            <div class="animate__animated animate__fadeInUp">
+                <h3>陪聊服务</h3>
+                <p>我们提供愉快的陪聊服务，与您畅聊各种话题，为您带来快乐和放松。</p>
+            </div>
+            <div class="animate__animated animate__fadeInUp">
+                <h3>游戏陪玩</h3>
+                <p>我们有丰富的游戏陪玩经验，可以陪您一起玩各种游戏并提供游戏技巧和建议。</p>
+            </div>
+            <div class="animate__animated animate__fadeInUp">
+                <h3>电影陪看</h3>
+                <p>我们可以为您提供共同观看电影的服务，让您感受到电影的乐趣并与您分享观影体验。</p>
+</div>
+<div class="animate__animated animate__fadeInUp">
+<h3>虚拟恋人</h3>
+<p>让你体验有另一半的感觉！</p>
+</div>
+</section>
+
+    <section id="prices" class="animate__animated animate__fadeIn">
+        <h2 class="animate__animated animate__fadeInUp">价格表</h2>
+        <table>
+            <tr>
+                <th>服务项目</th>
+                <th>价格</th>
+            </tr>
+            <tr>
+                <td>陪聊服务（每小时）</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>游戏陪玩（每小时）</td>
+                <td>$28</td>
+            </tr>
+            <tr>
+                <td>电影陪看（每部电影）</td>
+                <td>$19</td>
+            </tr>
+            <tr>
+                <td>虚拟恋人（每天）</td>
+                <td>$25</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact" class="animate__animated animate__fadeIn">
+        <h2 class="animate__animated animate__fadeInUp">联系我们</h2>
+        <p class="animate__animated animate__fadeInUp">如果您有任何问题或需要咨询，可以通过以下方式与我们取得联系：</p>
+        <ul class="animate__animated animate__fadeInUp">
+            <li>电话：198-3982-9293</li>
+            <li>邮箱：992603016@qq.com</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    &copy; 2023 yusra. All rights reserved.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('a').on('click', function(event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $('.fade-in').addClass('animate__fadeIn');
+        $('.fade-up').addClass('animate__fadeInUp');
+        $('.zoom-in').addClass('animate__zoomIn');
+    });
+    
+    
+<a href="点击链接加我为QQ好友：https://qm.qq.com/q/Azd7NdIYv0">点击这里添加团长为好友</a>
+</script>
+</body>
+</html>
